@@ -40,7 +40,7 @@ STORAGE|READE_EXTERNAL_STORAGE <br/> WRITE_EXTERNAL_STORAGE
                   }
             }
 
-&emsp;&emsp;***grantRequests[]*** 里封装的是请求结果，然后与`PackageManager.PERMISSION_GRANTED`对比，这个值就是同意授权的意思,要注意啊跟权限有关的字段都被封装到***PackageManger***类里面的,可以通过静态字段直接访问。我们检查一个用户是否拥有某个权限的方法是
+&emsp;&emsp;***grantRequests[]*** 里封装的是请求结果，然后与`PackageManager.PERMISSION_GRANTED`对比，这个值就是同意授权的意思,要注意啊跟权限有关的字段都被封装到 ***PackageManger*** 类里面的,可以通过静态字段直接访问。我们检查一个用户是否拥有某个权限的方法是
 
     ContextCompat.checkSelfPermission(Context,权限名),
 
